@@ -47,8 +47,8 @@ def init_spotipy(username, client_id, client_secret, cache_data):
     return spotipy.Spotify(auth=token)
 
 if __name__ == '__main__':
-    if(os.getenv('REDISTOGO_URL')):
-        redis = redis.from_url(os.getenv('REDISTOGO_URL'))
+    if(os.getenv('REDIS_URL')):
+        redis = redis.from_url(os.getenv('REDIS_URL'))
     else:
         redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 
