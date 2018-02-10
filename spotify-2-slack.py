@@ -80,7 +80,7 @@ if __name__ == '__main__':
             msg = updated_tracks(name, href, items, lastDate)
             slack.api_call(
                 "chat.postMessage",
-                channel="@psa",
+                channel=os.environ['SLACK_CHANNEL'],
                 text=msg
             )
 
