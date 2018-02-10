@@ -1,0 +1,32 @@
+{
+	"name": "Spotify playlist to slack",
+	"description": "Show new playlist entries in a slack channel",
+	"website": "https://github.com/petterl/spotify-2-slack-py",
+	"repository": "https://github.com/petterl/spotify-2-slack-py",
+	"env": {
+		"SLACK_API_TOKEN": {
+			"description": "Your Slack API token"
+		},
+		"SPOTIFY_USERNAME": {
+			"description": "A Spotify username for the user who has the playlist"
+		},
+		"SPOTIFY_PLAYLIST_USERNAME": {
+			"description": "A Spotify username that the playlists if other than SPOTIFY_USERNAME"
+		},
+		"SPOTIFY_CLIENT_ID": {
+			"description": "A Spotify developer client app id"
+		},
+		"SPOTIFY_CLIENT_SECRET": {
+			"description": "A Spotify developer client app secret"
+		},
+		"SPOTIFY_PLAYLIST_IDS": {
+			"description": "A comma sparated list of playlist ids"
+		},
+		"SPOTIPY_CACHE": {
+			"description": "The result of a spotipy cache run"
+		}
+	},
+	"addons": [
+		"redistogo:nano"
+	]
+}
